@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <label rel="stylesheet" href="dist/css/bootstrap.css">
+     <link rel="stylesheet" href="payment.css"/>
+     <script src="dist/js/bootstrap.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Payment Page</h1>
+        <p>Thank you for your order! Please proceed with the payment to complete your purchase.</p>
+        
+        <form>
+            <div class="mb-3">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456">
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="expiryDate" class="form-label">Expiry Date</label>
+                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cvv" placeholder="123">
+            </div>
+            <br>
+                <div class="mb-3">
+                    <label for="amount" class="form-label">Amount</label>
+                    <input type="text" class="form-control" id="amount" placeholder="0.00">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="cardholderName" class="form-label">Cardholder Name</label>
+                    <input type="text" class="form-control" id="cardholderName" placeholder="John Doe">
+            <button type="submit" class="btn btn-primary">Pay Now</button>
+
+    </div>
+</body>
+</html>

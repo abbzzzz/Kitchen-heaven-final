@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+     <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/images/logo.png" id="navbar__logo"> <i class="fa-solid fa-kitchen-set"></i></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__link">Home</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="recipes.html" class="navbar__link">Recipes</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="signup.html" class="navbar__link">Sign up</a>
+            </li>
+
+                <li class="navbar__item">
+                    <a href="AboutUs.html" class="navbar__link">About Us</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="ContactUs.html" class="navbar__link">Contact Us</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="login.html" class="navbar__link">Login</a>
+            </li>
+
+
+
+        </ul>
+    </nav>
+
+    <div class="auth">
+        <div class="left">  </div>
+
+    </div>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
