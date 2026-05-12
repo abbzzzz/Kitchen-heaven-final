@@ -3,61 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | Kitchen Heaven</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="login.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-     <nav class="navbar">
+    <!-- NAVBAR STARTS -->
+    <nav class="navbar">
+
         <div class="navbar__container">
-            <a href="/images/logo.png" id="navbar__logo"> <i class="fa-solid fa-kitchen-set"></i></a>
+
+            <a href="index.html" id="navbar__logo">
+                <i class="fa-solid fa-kitchen-set"></i>
+            </a>
+
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__link">Home</a>
-            </li>
 
-            <li class="navbar__item">
-                <a href="recipes.html" class="navbar__link">Recipes</a>
-            </li>
-
-            <li class="navbar__item">
-                <a href="signup.html" class="navbar__link">Sign up</a>
-            </li>
+            <ul class="navbar__menu">
 
                 <li class="navbar__item">
-                    <a href="AboutUs.html" class="navbar__link">About Us</a>
-            </li>
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
 
-            <li class="navbar__item">
-                <a href="ContactUs.html" class="navbar__link">Contact Us</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="recipes.html" class="navbar__links">Recipes</a>
+                </li>
 
-            <li class="navbar__item">
-                <a href="login.html" class="navbar__link">Login</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="signup.html" class="navbar__links">Sign Up</a>
+                </li>
 
+                <li class="navbar__item">
+                    <a href="AboutUs.html" class="navbar__links">About Us</a>
+                </li>
 
+                <li class="navbar__item">
+                    <a href="ContactUs.html" class="navbar__links">Contact Us</a>
+                </li>
 
-        </ul>
+                <li class="navbar__item">
+                    <a href="login.html" class="navbar__links">Login</a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </nav>
+    <!-- NAVBAR ENDS -->
 
-    <div class="auth">
-        <div class="left">  </div>
 
-    </div>
-    <h1>Login</h1>
-    <form action="/login" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Login">
-    </form>
+    <!-- LOGIN SECTION -->
+    <section class="login-section">
+
+        <div class="main-card">
+
+            <!-- IMAGE SIDE -->
+            <div class="image-side">
+
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+                alt="Food Image">
+
+            </div>
+
+            <!-- FORM SIDE -->
+            <div class="form-side">
+
+                <h1>Welcome Back</h1>
+
+                <p class="subtitle">
+                    Login to continue exploring delicious recipes.
+                </p>
+
+                <form action="/login" method="post">
+
+                    <label for="username">Username</label>
+
+                    <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Username"
+                    required>
+
+                    <label for="password">Password</label>
+
+                    <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Password"
+                    required>
+
+                    <button type="submit" class="login-btn">
+                        Login
+                    </button>
+
+                </form>
+
+                <button class="google-btn">
+                    <i class="fa-brands fa-google"></i>
+                    Login with Google
+                </button>
+
+                <p class="footer-text">
+                    Don't have an account?
+                    <a href="signup.html">Sign Up</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER STARTS -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Column 1 -->
+            <div class="footer-column">
+
+                <h4>Kitchen Heaven</h4>
+
+                <p>
+                    Your number one destination for delicious recipes,
+                    healthy meals, and cooking inspiration.
+                </p>
+
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-column">
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <p>Email: info@kitchenheaven.com</p>
+                <p>Phone: +254 700 123 456</p>
+                <p>Nairobi, Kenya</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kitchen Heaven. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <!-- FOOTER ENDS -->
+
 </body>
 </html>

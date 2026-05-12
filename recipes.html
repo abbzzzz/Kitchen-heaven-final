@@ -1,342 +1,343 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Recipes | Kitchen Heaven</title>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="dist/css/bootstrap.css">
-     <link rel="stylesheet" href="recipestyle.css"/>
     <script src="dist/js/bootstrap.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="recipestyle.css"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-     <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
         <div class="navbar__container">
-            <a href="/images/logo.png" id="navbar__logo"> <i class="fa-solid fa-kitchen-set"></i></a>
+
+            <a href="index.html" id="navbar__logo">
+                <i class="fa-solid fa-kitchen-set"></i>
+            </a>
+
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__link">Home</a>
-            </li>
 
-            <li class="navbar__item">
-                <a href="recipes.html" class="navbar__link">Recipes</a>
-            </li>
-
-            <li class="navbar__item">
-                <a href="signup.html" class="navbar__link">Sign up</a>
-            </li>
+            <ul class="navbar__menu">
 
                 <li class="navbar__item">
-                    <a href="AboutUs.html" class="navbar__link">About Us</a>
-            </li>
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
 
-            <li class="navbar__item">
-                <a href="ContactUs.html" class="navbar__link">Contact Us</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="recipes.html" class="navbar__links">Recipes</a>
+                </li>
 
-            <li class="navbar__item">
-                <a href="login.html" class="navbar__link">Login</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="signup.html" class="navbar__links">Sign Up</a>
+                </li>
 
-            <li class="navbar__item">
-                <a href="Drinks.html" class="navbar__link">Drinks</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="AboutUs.html" class="navbar__links">About Us</a>
+                </li>
 
-             <li class="navbar__item">
-                <a href="Soups.html" class="navbar__link">Soups</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="ContactUs.html" class="navbar__links">Contact Us</a>
+                </li>
 
-            <li class="navbar__item">
-                <a href="Meat.html" class="navbar__link">Meat</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="login.html" class="navbar__links">Login</a>
+                </li>
 
+              
+                </li>
 
-        </ul>
+            </ul>
+
+        </div>
+
     </nav>
- <!-- section tatu starts here -->
-           <section class="row bg-dark">
-            
-            <div class="col-lg-3 text-danger">
 
-             <div class="card shadow bg-dark">
-                <div class="card-header">
-                    <h5>pasta</h5>
-                </div>
-             
-                <div class="card-body">
-                <img src="images/pasta.png.jpg" alt="advert image"width="250px" height="200px">
-                </div>
-                
+    <!-- SECTION 1 -->
+    <section class="container py-5">
 
-                <div class="card-footer">
-                <ol type="1">
-                    <li>Olive oil</li>
-                    <li>Minced Garlic cloves</li>
-                    <li>Butter</li>
-                    <li>Chicken Broth</li>
-                    <li>Black pepper</li>
-                    <li>Salt</li>
-                    <li>Spaghetti</li>
-                    <li>Parmesan Cheese</li>
-                    <li>Heavy Cream</li>
-                    <li>Chopped Parsely</li>
-                </ol>
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-3 text-left text-danger">
-                <div class="card shadow bg-dark">
+        <h2 class="section-title">Popular Recipes</h2>
 
-                <div class="card-header">
-                    <h5>Garlic Butter Chicken</h5>
-                </div>
-                <div class="card-body">
-                <img src="images/GChicken.png.jpg" alt="chicken" height="200px" width="250px">
-                </div>
+        <div class="row g-4">
 
-                <div class="card-footer">
-
-                <ol type="1">
-                  <li>Chicken cubes</li>
-                  <li>Olive oil</li>
-                  <li>salt</li>
-                  <li>black pepper</li>
-                  <li>Garlic Powder</li>
-                  <li>Soy sauce</li>
-                  <li>Honey</li>
-                  <li>2 Garlic cloves</li>
-                  <li>butter</li>
-                </ol>      
-                  
-            </div>
-            </div>
-            
-            </div>
-
-
-            <div class="col-lg-3 text-left text-danger">
-                <div class="card shadow bg-dark">
+            <!-- Pasta -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card recipe-card bg-dark h-100">
 
                     <div class="card-header">
-                        <h5>Fried Rice</h5>
+                        Pasta
                     </div>
 
                     <div class="card-body">
-                <img src="images/FRice.png.jpg" alt="Fried Rice" height="200px" width="250px">
-                     </div>
-
-                     <div class="card-footer">
-                <ol type="1">
-                    <li>Rice</li>
-                    <li>2 eggs</li>
-                    <li>1tb Sesame oil</li>
-                    <li>1tb Soy sauce</li>
-                    <li>1 cup mixed veggies</li>
-                    <li>minced garlic cloves</li>
-                </ol>
-                    </div>
-            </div>
-            </div>
-
-            <div class="col-lg-3 text-left text-danger">
-                <div class="card shadow bg-dark">
-                    <div class="card-header">
-
-                        <h5>Spicy Mayo Drizzle</h5>
-                    </div>
-                <div class="card-body">
-                <img src="images/Drizzle.png.jpg" alt="Spicy Drizzle" height="200px" width="250px">
-                </div>
-
-                <div class="card-footer">
-
-                <ol type="1">
-                    <li>1tb Siracha</li>
-                    <li>1/4 cup mayo</li>
-                    <li>1/2 tsp soy sauce</li>
-                    <li>1tsp lemon juice</li>
-                </ol>
-                </div>
-                </div>
-            </div>
-        </section> <hr> 
-        <!-- section tatu ends here -->
-
-         <!-- section tano starts here -->
-        
-          <section class="row bg-dark">
-            <div class="col-lg-4 text-left text-danger">
-
-                
-                <div class="card shadow bg-dark">
-
-                    <div class="card-header">
-                        <h5>Korean Beef</h5>
+                        <img src="images/pasta.png.jpg" class="recipe-img">
                     </div>
 
-                    <div class="card-body">
-                <img src="images/KBeef.png.jpg" alt="beef" height="200px" width="250px">
-                </div>
-
-                <div class="card-footer">
-
-                <ol type="i">
-                    <li>Beef</li>
-                    <li>Oil</li>
-                    <li>Minced garlic</li>
-                    <li>Grated fresh ginger</li>
-                    <li>soy sauce</li>
-                    <li>Chilli paste</li>
-                    <li>Brown Sugar</li>
-                    <li>Vinegar</li>
-                    <li>Sesame oil</li>
-                    <li>Black pepper</li>
-                </ol>
-
-            </div>
-            </div>
-            </div>
-
-            <div class="col-lg-4 text-left text-danger">
-                <div class="card shadow bg-dark">
-
-                    <div class="card-header">
-                        <h5>Fried Rice</h5>
-                    </div>
-                     
-                    <div class="card-body">
-                <img src="images/FRice.png.jpg" alt="rice" height="200px" width="250px">
-                    </div>
                     <div class="card-footer">
+                        <ol>
+                            <li>Olive oil</li>
+                            <li>Garlic cloves</li>
+                            <li>Butter</li>
+                            <li>Chicken broth</li>
+                            <li>Black pepper</li>
+                            <li>Salt</li>
+                            <li>Spaghetti</li>
+                            <li>Parmesan cheese</li>
+                            <li>Heavy cream</li>
+                            <li>Parsley</li>
+                        </ol>
+                    </div>
 
-                <ol type="i">
-                    <li>Rice</li>
-                    <li>Oil</li>
-                    <li>Finely Diced Onion</li>
-                    <li>Shredded carrots</li>
-                    <li>Green onions</li>
-                    <li>2 eggs</li>
-                    <li>Soy sauce</li>
-                    <li>Sesame oil</li>
-                </ol>
-                   </div>
-               </div>
-            </div>
-
-            <div class="col-lg-4 text-left text-danger">
-                <div class="card-shadow bg-dark">
-
-                <div class="card-header">
-                    <h5>Spicy Drizzle</h5>
-                </div>
-
-                <div class="card-body">
-                <img src="images/Drizzle.png.jpg" alt="drizzle" height="200px" width="270px">
-                </div>
-
-               <div class="card-footer">
-
-               <ol type="i">
-                <li>1/4 cup mayo</li>
-                <li>Siracha</li>
-                <li>Rice vinegar</li>
-                <li>Garlic Powder</li>
-                <li>Water(to thin if needed)</li>
-               </ol>
-               </div>
-               </div>
-            </div>
-          </section> 
-          <!-- section tano ends here -->
-
-        <!-- section sita starts here -->
-         
-         <section class="row bg-dark">
-            <div class="col-lg-4 text-left text-danger ">
-                <div class="card shadow bg-dark"></div>
-                <div class="card-header">
-                    <h5>Steak Bites</h5>
-                </div>
-
-                <div class="card-body">
-                <img src="images/SBites.png.jpg" alt="tv one" height="200px" width="270px">
-                </div>
-                <div class="card-footer">
-      
-                <ol type="a">
-                    <li>Steak</li>
-                    <li>Olive oil</li>
-                    <li>salt</li>
-                    <li>Black pepper</li>
-                    <li>Garlic powder</li>
-                    <li>Smoked paprika</li>
-                    <li>butter</li>
-                    <li>chopped parsely</li>
-                    <li>Black pepper</li>
-                </ol>
                 </div>
             </div>
 
+            <!-- Garlic Chicken -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card recipe-card bg-dark h-100">
 
-            <div class="col-lg-4 text-left text-danger">
-                <div class="card shadow bg-dark">
-                
-                <div class="card-header">
-                    <h5>Crispy Potatoes</h5>
-                </div>
+                    <div class="card-header">
+                        Garlic Butter Chicken
+                    </div>
 
-                <div class="card-body">
-                <img src="images/CPotatoes.png.jpg" alt="waru" height="200px" width="270px">
-                </div>
+                    <div class="card-body">
+                        <img src="images/GChicken.png.jpg" class="recipe-img">
+                    </div>
 
-                <div class="card-footer">
+                    <div class="card-footer">
+                        <ol>
+                            <li>Chicken cubes</li>
+                            <li>Olive oil</li>
+                            <li>Salt</li>
+                            <li>Black pepper</li>
+                            <li>Garlic powder</li>
+                            <li>Soy sauce</li>
+                            <li>Honey</li>
+                            <li>Garlic cloves</li>
+                            <li>Butter</li>
+                        </ol>
+                    </div>
 
-                <ol type="a">
-                    <li>Potato cubes</li>
-                    <li>Olive oil</li>
-                    <li>Paprika</li>
-                    <li>Garlic Powder</li>
-                    <li>Onion Powder</li>
-                    <li>salt</li>
-                    <li>Black pepper</li>
-                    <li>Chopped parsely</li>
-                </ol>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 text-left text-danger">
-                <div class="card shadow bg-dark">
-                
-                <div class="card-header">
-                    <h5>Drizzle</h5>
-                </div>
-
-                <div class="card-body">
-                <img src="images/Drizzle.png.jpg" alt="Spicy Drizzle" height="200px" width="270px">
-                </div>
-
-                <div class="card-footer">
-                <ol type="a">
-                    <li>Light Mayo</li>
-                    <li>Siracha</li>
-                    <li>Garlic Powder</li>
-                    <li>Lime juice</li>
-                    <li>Water(to thin)</li>
-                </ol>
-                </div>
                 </div>
             </div>
 
-            <br>
-            <a href="payment.html">
-            <button class="btn btn-primary" style="font-size:25px; background-color: #000000; color: white;">Make Payment</button>
+            <!-- Fried Rice -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card recipe-card bg-dark h-100">
 
-         </section> <hr>
-         <!-- section sita ends here -->
+                    <div class="card-header">
+                        Fried Rice
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/FRice.png.jpg" class="recipe-img">
+                    </div>
+
+                    <div class="card-footer">
+                        <ol>
+                            <li>Rice</li>
+                            <li>Eggs</li>
+                            <li>Sesame oil</li>
+                            <li>Soy sauce</li>
+                            <li>Mixed veggies</li>
+                            <li>Garlic</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Drizzle -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card recipe-card bg-dark h-100">
+
+                    <div class="card-header">
+                        Spicy Mayo Drizzle
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/Drizzle.png.jpg" class="recipe-img">
+                    </div>
+
+                    <div class="card-footer">
+                        <ol>
+                            <li>Siracha</li>
+                            <li>Mayo</li>
+                            <li>Soy sauce</li>
+                            <li>Lemon juice</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="container py-5">
+
+        <h2 class="section-title">Chef Specials</h2>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card recipe-card bg-dark h-100">
+
+                    <div class="card-header">
+                        Korean Beef
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/KBeef.png.jpg" class="recipe-img">
+                    </div>
+
+                    <div class="card-footer">
+                        <ol>
+                            <li>Beef</li>
+                            <li>Oil</li>
+                            <li>Garlic</li>
+                            <li>Fresh ginger</li>
+                            <li>Soy sauce</li>
+                            <li>Chilli paste</li>
+                            <li>Brown sugar</li>
+                            <li>Vinegar</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card recipe-card bg-dark h-100">
+
+                    <div class="card-header">
+                        Fried Rice
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/FRice.png.jpg" class="recipe-img">
+                    </div>
+
+                    <div class="card-footer">
+                        <ol>
+                            <li>Rice</li>
+                            <li>Oil</li>
+                            <li>Onion</li>
+                            <li>Carrots</li>
+                            <li>Green onions</li>
+                            <li>Eggs</li>
+                            <li>Soy sauce</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card recipe-card bg-dark h-100">
+
+                    <div class="card-header">
+                        Spicy Drizzle
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/Drizzle.png.jpg" class="recipe-img">
+                    </div>
+
+                    <div class="card-footer">
+                        <ol>
+                            <li>Mayo</li>
+                            <li>Siracha</li>
+                            <li>Rice vinegar</li>
+                            <li>Garlic powder</li>
+                            <li>Water</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PAYMENT BUTTON -->
+    <div class="text-center mb-5">
+        <a href="payment.html">
+            <button class="btn btn-danger payment-btn">
+                Make Payment
+            </button>
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h4>Kitchen Heaven</h4>
+
+                    <p>
+                        Your number one destination for delicious recipes,
+                        healthy meals, and cooking inspiration.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4>Quick Links</h4>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="recipes.html" class="footer-link">Recipes</a></li>
+                        <li><a href="AboutUs.html" class="footer-link">About Us</a></li>
+                        <li><a href="ContactUs.html" class="footer-link">Contact Us</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4>Contact</h4>
+
+                    <p>Email: info@kitchenheaven.com</p>
+                    <p>Phone: +254 700 123 456</p>
+                    <p>Nairobi, Kenya</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+                <p>&copy; 2026 Kitchen Heaven. All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

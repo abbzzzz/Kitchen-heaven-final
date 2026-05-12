@@ -4,62 +4,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitchen Heaven </title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css"/>  
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Custom Caption Styling -->
+<style>
+  .custom-caption {
+    background: rgba(0, 0, 0, 0.5); /* transparent black */
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .custom-caption h3,
+  .custom-caption p {
+    color: white;
+  }
+</style>
 </head>
 <body>
     
 
+
+      <!-- NAVBAR STARTS -->
     <nav class="navbar">
+
         <div class="navbar__container">
-            <a href="/images/logo.png" id="navbar__logo"> <i class="fa-solid fa-kitchen-set"></i></a>
+
+            <a href="index.html" id="navbar__logo">
+                <i class="fa-solid fa-kitchen-set"></i>
+            </a>
+
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__link">Home</a>
-            </li>
 
-            <li class="navbar__item">
-                <a href="recipes.html" class="navbar__link">Recipes</a>
-            </li>
-
-            <li class="navbar__item">
-                <a href="signup.html" class="navbar__link">Sign up</a>
-            </li>
+            <ul class="navbar__menu">
 
                 <li class="navbar__item">
-                    <a href="AboutUs.html" class="navbar__link">About Us</a>
-            </li>
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
 
-            <li class="navbar__item">
-                <a href="ContactUs.html" class="navbar__link">Contact Us</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="recipes.html" class="navbar__links">Recipes</a>
+                </li>
 
-            <li class="navbar__item">
-                <a href="login.html" class="navbar__link">Login</a>
-            </li>
+                <li class="navbar__item">
+                    <a href="signup.html" class="navbar__links">Sign Up</a>
+                </li>
 
-    
+                <li class="navbar__item">
+                    <a href="AboutUs.html" class="navbar__links">About Us</a>
+                </li>
 
+                <li class="navbar__item">
+                    <a href="ContactUs.html" class="navbar__links">Contact Us</a>
+                </li>
 
-        </ul>
+                <li class="navbar__item">
+                    <a href="login.html" class="navbar__links">Login</a>
+                </li>
+
+              
+
+            </ul>
+
+        </div>
+
     </nav>
+    <!-- NAVBAR ENDS -->
 
 
-    <h2>Home</h2>
-    <div class="Home"></div>
-    @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+      <!-- Section 2 starts here -->
+ 
+   <section class="row">
+  <div class="col-md-11 mx-auto">
+    <!-- Below div will carry the 3 sections of a carousel -->
+    <div class="carousel slide" data-bs-ride="carousel" id="mycarousel">
+      
+      <!-- Wrapper Starts here -->
+      <div class="carousel-inner">
 
-    <script src="script.js"></script>
+        <div class="carousel-item active">
+          <img src="images/banner1.jpeg" class="d-block w-100" height="400px" />
 
-    <img src="images/home1 (1).jpg" alt="Logo" class="logo" height="1000vh" width="1500vh">
-   
+          <div class="carousel-caption custom-caption">
+            <h3>Delicious Burgers</h3>
+            <p>Freshly grilled and packed with flavor.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/banner2.jpeg" class="d-block w-100" height="400px" />
+
+          <div class="carousel-caption custom-caption">
+            <h3>Tasty Pizza</h3>
+            <p>Hot, cheesy, and oven baked to perfection.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/banner3.jpeg" class="d-block w-100" height="400px" />
+
+          <div class="carousel-caption custom-caption">
+            <h3>Healthy Salads</h3>
+            <p>Fresh ingredients for a healthy lifestyle.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/banner4.webp" class="d-block w-100" height="400px" />
+
+          <div class="carousel-caption custom-caption">
+            <h3>Sweet Desserts</h3>
+            <p>End your meal with something sweet.</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Wrapper ends here -->
+
+      <!-- Controller starts here -->
+      <a
+        href="#mycarousel"
+        data-bs-slide="prev"
+        class="carousel-control-prev"
+      >
+        <span class="carousel-control-prev-icon bg-danger"></span>
+      </a>
+
+      <a
+        href="#mycarousel"
+        data-bs-slide="next"
+        class="carousel-control-next"
+      >
+        <span class="carousel-control-next-icon bg-danger"></span>
+      </a>
 
     </div>
+  </div>
+</section>
+
+<!-- Featured Recipes Section -->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Featured Recipes</h2>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+             class="card-img-top"
+             height="250">
+        <div class="card-body">
+          <h5 class="card-title">Fresh Salad</h5>
+          <p class="card-text">
+            A healthy mix of vegetables and greens for your perfect meal.
+          </p>
+          <a href="#" class="btn btn-danger">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+             class="card-img-top"
+             height="250">
+        <div class="card-body">
+          <h5 class="card-title">Cheesy Pizza</h5>
+          <p class="card-text">
+            Oven-baked pizza topped with rich cheese and fresh toppings.
+          </p>
+          <a href="#" class="btn btn-danger">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+             class="card-img-top"
+             height="250">
+        <div class="card-body">
+          <h5 class="card-title">Juicy Burger</h5>
+          <p class="card-text">
+            Grilled burger packed with flavor and served fresh.
+          </p>
+          <a href="#" class="btn btn-danger">View Recipe</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Popular Categories Section -->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Popular Categories</h2>
+
+  <div class="row text-center">
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h4>🥗 Salads</h4>
+        <p>Fresh and healthy recipes.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h4>🍕 Pizza</h4>
+        <p>Cheesy and delicious pizzas.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h4>🍔 Burgers</h4>
+        <p>Juicy grilled burger recipes.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h4>🍰 Desserts</h4>
+        <p>Sweet treats for everyone.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Chef Recommendations Section -->
+<section class="container mt-5 mb-5">
+  <h2 class="text-center mb-4">Chef Recommendations</h2>
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061"
+             class="card-img-top"
+             height="300">
+        <div class="card-body">
+          <h5 class="card-title">Special Pasta</h5>
+          <p class="card-text">
+            Try our creamy pasta recipe recommended by top chefs.
+          </p>
+          <a href="#" class="btn btn-dark">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+             class="card-img-top"
+             height="300">
+        <div class="card-body">
+          <h5 class="card-title">Breakfast Combo</h5>
+          <p class="card-text">
+            Start your day with a healthy and energetic breakfast.
+          </p>
+          <a href="#" class="btn btn-dark">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Column 1 -->
+      <div class="col-md-4">
+        <h4>Kitchen Heaven</h4>
+        <p>
+          Your number one destination for delicious recipes,
+          healthy meals, and cooking inspiration.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4">
+        <h4>Quick Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="recipes.html" class="text-white text-decoration-none">Recipes</a></li>
+          <li><a href="AboutUs.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="ContactUs.html" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-4">
+        <h4>Contact</h4>
+        <p>Email: info@kitchenheaven.com</p>
+        <p>Phone: +254 700 123 456</p>
+        <p>Nairobi, Kenya</p>
+      </div>
+
+    </div>
+
+    <hr class="bg-white">
+
+    <div class="text-center">
+      <p class="mb-0">
+        &copy; 2026 Kitchen Heaven. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
 
 
 </body>
